@@ -30,28 +30,67 @@
                <li class="contacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-solid_menu"></use>
           </svg>
-        </button>
-        <!-- <div class="mobile-menu">
+        </button> 
+      </div>
+
+
+        <div class="mobile-menu" data-menu>
+          <div>
           <div class="conteiner mobile-menu-conteiner">
-              <button type="button" class="modal-close">
-                <svg class="modal-close-icon" width="8" height="8">
+              <button type="button" class="mobile-close" data-menu-close>
+                <svg class="modal-close-icon mobile-icon" width="8" height="8">
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
                 </button>
           </div>
-        </div> -->
-   </div>
+          <nav class="mobile-nav">
+            
+            <ul class="mob-nav-list">
+              <li class="mob-nav-item"><a class="mob-nav-link" href=>Studio</a></li>
+              <li class="mob-nav-item"><a class="mob-nav-link" href="">Portfolio</a></li>
+              <li class="mob-nav-item"><a class="mob-nav-link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          </div>
+
+          <div>
+          <address class="mob-contacts">
+            <ul class="mob-contacts-list">
+              <li class="mob-contacts-item"><a class="mob-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+              <li class="mob-contacts-item"><a class="mob-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+          </address>
+
+          <ul class="mob-icon-list">
+            <li class="social-icon-item mob-icon-item"><a class="social-network mob-social-network" href=""><svg class="network mob-network" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg></a></li>
+            <li class="social-icon-item mob-icon-item"><a class="social-network mob-social-network" href=""><svg class="network mob-network" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg></a></li>
+            <li class="social-icon-item mob-icon-item"><a class="social-network mob-social-network" href=""><svg class="network mob-network" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg></a></li>
+            <li class="social-icon-item mob-icon-item"><a class="social-network mob-social-network" href=""><svg class="network mob-network" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg></a></li>
+          </ul>
+          </div>
+        </div>
+
+
+  
     </header> 
     <main>
 
         <section class="hero">
             <div class="container container-hero">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="hero_btn btn" type="button">Order Service</button>
+                <button class="hero_btn btn" type="button" data-modal-open >Order Service</button>
             </div>
         </section>
         
@@ -310,9 +349,9 @@
      </div>
     </footer>
 
-    <div class="backdrop is-open hidden">
+    <div class="backdrop is-open" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close">
+        <button type="button" class="modal-close" data-modal-close>
             <svg class="modal-close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -358,11 +397,13 @@
             <label for="user-privacy" class="check-text"><span class="check-element"><svg class="check-icon" width="10"
                  height="8">
               <use href="./images/icons.svg#icon-vector"></use>
-            </svg></span>I accept the terms and conditions of the <a href="" class="policy-text">Privacy Policy</a></label>
+            </svg></span><span class="modal-privacy-text">I accept the terms and conditions of the <a href="" class="policy-text">Privacy Policy</a></span></label>
            </div>
             <button type="submit" class="hero_btn">Send</button>
         </form>
       </div>  
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
